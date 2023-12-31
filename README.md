@@ -80,7 +80,7 @@ Principal Component Analysis (PCA) is a technique for reducing the dimensionalit
    - Multiply the standardized data matrix by the feature vector matrix to generate a new matrix of lower dimensionality. Each row represents a new observation, and each column is a principal component. This matrix can be used for face recognition by comparing distances or similarities between rows, representing faces in terms of principal components.
 # Results and Discussion 
 ## Table 1. Correct recognition rate  with variable number of training samples 
-| Training Samples | Testing Samples | CRR   |
+| Training Samples | Testing Samples | CRR (%)  |
 |-------------------|------------------|-------|
 | 5                 | 5                | 78    |
 | 6                 | 4                | 90    |
