@@ -24,7 +24,7 @@ PCA is employed to generate k eigenfaces (here, I have chosen 50) for a training
 - Each directory contains 10 different images of the selected subject named as: `Y.pgm` where Y indicates the image for the specific subject (between 1 and 10).
 
 **Explore the ORL Face Database:**
-[Learn More](https://www.kaggle.com/datasets/kasikrit/att-database-of-faces****)
+[Learn More](https://www.kaggle.com/datasets/kasikrit/att-database-of-faces)
 
 Feel free to explore and utilize this dataset for your research and projects! 🚀 #FacialRecognition #Dataset #ORLFaceDatabase #DataScience
 
