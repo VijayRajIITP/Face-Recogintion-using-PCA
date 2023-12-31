@@ -87,5 +87,7 @@ Principal Component Analysis (PCA) is a technique for reducing the dimensionalit
 | 7                 | 3                | 91    |
 | 8                 | 2                | 93.75 |
 | 9                 | 1                | 95    |
- **As the number of training samples increases from 5 to 9, the Correct Recognition Rate (CRR) also increases. This suggests that having more diverse training samples positively influences the recognition accuracy.**
+
+
+ **Above Table shows that As the number of training samples increases from 5 to 9, the Correct Recognition Rate (CRR) also increases. This suggests that having more diverse training samples positively influences the recognition accuracy.**
 
