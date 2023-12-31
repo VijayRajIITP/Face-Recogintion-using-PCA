@@ -91,3 +91,13 @@ Principal Component Analysis (PCA) is a technique for reducing the dimensionalit
 
  **Above Table shows that As the number of training samples increases from 5 to 9, the Correct Recognition Rate (CRR) also increases. This suggests that having more diverse training samples positively influences the recognition accuracy.**
 
+## Table 2. Correct recognition rate  with different number of eigen faces
+| Number of Eigenfaces | CRR (%) |
+|----------------------|---------|
+| 5                    | 73.75   |
+| 10                   | 90      |
+| 15                   | 91      |
+| 20                   | 93.75   |
+| 30                   | 93.75   |
+
+**Conclusion: Eigenfaces represent the principal components that capture the most significant variations in the face dataset. Initially, a small number of Eigenfaces (e.g., 5 or 10) might capture essential features for recognition. As we increase the number, additional Eigenfaces refine the representation, contributing to improved recognition.**
