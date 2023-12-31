@@ -1,9 +1,12 @@
-# Face-Recogintion-using-PCA
-🌐 Face Recognition using Principal Component Analysis (PCA) 🌐
+# Face Recognition using Principal Component Analysis (PCA)
+
+🌐 **Face Recognition using Principal Component Analysis (PCA)** 🌐
 
 This repository showcases a facial recognition system using PCA, specifically projecting face images onto the "Eigenfaces," which are the eigenvectors of the face dataset. The objective is to recognize faces by comparing them to a pre-existing database.
+
 PCA is employed to generate k eigenfaces (here, I have chosen 50) for a training set of M images (400), thereby reducing the number of values from M to k needed to identify an unknown face.
-📄 Read the Paper on Eigenfaces(https://sites.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf)
+
+📄 **Read the Paper on Eigenfaces:** [Eigenfaces Paper](https://sites.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf)
 
 📂 About the Dataset:
 # The ORL Face Database
@@ -26,16 +29,66 @@ PCA is employed to generate k eigenfaces (here, I have chosen 50) for a training
 **Explore the ORL Face Database:**
 [Learn More](https://www.kaggle.com/datasets/kasikrit/att-database-of-faces)
 
-Feel free to explore and utilize this dataset for your research and projects! 🚀 #FacialRecognition #Dataset #ORLFaceDatabase #DataScience
 
 
-🚀 Tasks Performed:
 
-Dataset Handling: Loaded and divided data into training and test sets.
-PCA Algorithm: Implemented PCA from scratch.
-Image Reconstruction: Implemented image reconstruction using eigen projections and visualized differences for different component counts.
-Visualization: Explored visualizations, including mean (Eigen face) generation.
-Face Recognition Module: Achieved accuracy on the training set for different principal components.
+
+# 🚀 Tasks Performed
+
+This repository details the following tasks performed in the Face Recognition using Principal Component Analysis (PCA) project:
+
+1. **Loading Dataset and Splitting:**
+   - Loaded the dataset.
+   - Divided the data into training and test sets.One split was 50-50 and other was 70-30 .The results are discussed in n
+
+2. **Implementing PCA Algorithm from Scratch:**
+   - Developed the PCA algorithm from scratch.
+
+3. **Implementing Image Reconstruction:**
+   - Utilized eigen projections for image reconstruction.
+   - Visualized differences for varying numbers of components.
+
+4. **Visualizing Mean (Eigen Face) Generation:**
+   - Visualized the mean (Eigen face) generated from the dataset.
+
+5. **Face Recognition Module:**
+   - Developed a face recognition module.
+   - Obtained accuracy on the training set.
+   - Evaluated accuracy for different numbers of training images.
+# Principal Component Analysis (PCA) for Face Recognition
+
+Principal Component Analysis (PCA) is a technique for reducing the dimensionality of data by capturing the maximum variance in the dataset. When applied to face recognition, PCA helps in representing facial features in a lower-dimensional space. Here's a step-by-step guide:
+
+## Steps:
+
+1. **Standardize the Dataset:**
+   - Subtract the mean and divide by the standard deviation for each feature to ensure zero mean and unit variance, avoiding bias and scale issues in the data.
+
+2. **Calculate Covariance Matrix:**
+   - Compute a square matrix that measures how each feature varies with respect to others. Diagonal elements are variances, and off-diagonal elements are covariances.
+
+3. **Eigenvalues and Eigenvectors:**
+   - Solve the equation $Cv = \lambda v$ to obtain eigenvalues and eigenvectors. Eigenvalues represent the variance explained by each eigenvector, and eigenvectors represent directions of new variables (principal components) orthogonal to each other.
+
+4. **Sort Eigenvalues and Eigenvectors:**
+   - Arrange in descending order based on eigenvalues, storing them in a matrix where each column is an eigenvector, and each row is an eigenvalue.
+
+5. **Pick k Eigenvalues:**
+   - Choose k based on the desired level of information preservation or compression. A common criterion is to select k such that the cumulative sum of the k largest eigenvalues is at least a certain percentage (e.g., 95%) of the total sum of all eigenvalues. The matrix of eigenvectors, also called the feature vector, is formed by taking the first k columns of the sorted matrix.
+
+6. **Transform the Original Matrix:**
+   - Multiply the standardized data matrix by the feature vector matrix to generate a new matrix of lower dimensionality. Each row represents a new observation, and each column is a principal component. This matrix can be used for face recognition by comparing distances or similarities between rows, representing faces in terms of principal components.
+
+## Source:
+- Conversation with Bing, 31/12/2023
+- [Step-By-Step Guide to PCA - Turing](https://www.turing.com/kb/guide-to-principal-component-analysis)
+- [PCA - GeeksforGeeks](https://www.geeksforgeeks.org/principal-component-analysis-pca/)
+- [Understanding PCA Step by Step - Medium](https://medium.com/analytics-vidhya/understanding-principle-component-analysis-pca-step-by-step-e7a4bb4031d9)
+- [Step-By-Step PCA - LearnPCA](https://bryanhanson.github.io/LearnPCA/articles/Vig_03_Step_By_Step_PCA.html)
+- [Wikipedia - Principal Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
+
+
+
 
 🔧 Steps for PCA Implementation:
 
