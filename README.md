@@ -78,44 +78,13 @@ Principal Component Analysis (PCA) is a technique for reducing the dimensionalit
 
 6. **Transform the Original Matrix:**
    - Multiply the standardized data matrix by the feature vector matrix to generate a new matrix of lower dimensionality. Each row represents a new observation, and each column is a principal component. This matrix can be used for face recognition by comparing distances or similarities between rows, representing faces in terms of principal components.
-
-## Source:
-- Conversation with Bing, 31/12/2023
-- [Step-By-Step Guide to PCA - Turing](https://www.turing.com/kb/guide-to-principal-component-analysis)
-- [PCA - GeeksforGeeks](https://www.geeksforgeeks.org/principal-component-analysis-pca/)
-- [Understanding PCA Step by Step - Medium](https://medium.com/analytics-vidhya/understanding-principle-component-analysis-pca-step-by-step-e7a4bb4031d9)
-- [Step-By-Step PCA - LearnPCA](https://bryanhanson.github.io/LearnPCA/articles/Vig_03_Step_By_Step_PCA.html)
-- [Wikipedia - Principal Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
-
-
-
-
-🔧 Steps for PCA Implementation:
-
-Standardize the Data: Ensure zero mean and unit variance.
-Compute Covariance Matrix: Reveal feature relationships.
-Compute Eigenvectors and Eigenvalues: Identify principal components.
-Select Principal Components: Form a new lower-dimensional space.
-💡 Advantages of PCA:
-
-Reduces variables, simplifying analysis.
-Increases interpretability and visualization.
-🛑 Limitations of PCA:
-
-Assumes linear relationships.
-Sensitivity to outliers.
-Requires data scaling.
-In the context of Face Recognition:
-
-Limited ability to capture all facial variations.
-Accuracy may be insufficient for high-security applications.
-Computational challenges with large datasets.
-Explore the power of PCA in facial recognition! 🤖✨ #FacialRecognition #PCA #Eigenfaces #DataScience
-
-Feel free to contribute and enhance the capabilities of this face recognition system! 🚀
-
-
-
-
-
+# Results and Discussion 
+## Table 1. Correct recognition rate  with variable number of training samples 
+| Training Samples | Testing Samples | CRR   |
+|-------------------|------------------|-------|
+| 5                 | 5                | 78    |
+| 6                 | 4                | 90    |
+| 7                 | 3                | 91    |
+| 8                 | 2                | 93.75 |
+| 9                 | 1                | 95    |
 
